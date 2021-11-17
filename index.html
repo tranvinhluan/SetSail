@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -403,7 +404,7 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <li class="nav-menu-item">
+                                    <li class="nav-menu-item nav-menu-all">
                                         <span class="item-outer">Elements</span>
                                         <!-- Section all list-->
                                         <div class="item-all">
@@ -632,7 +633,7 @@
 
                         <div class="navbar-right">
                             <div class="navbar-right-inner">
-                                <div class="navbar-cart-holder">
+                                <div class="navbar-cart-holder ">
                                     <div class="navbar-cart-inner">
                                         <a href="" class="navbar-cart__link">
                                             <i class="navbar-cart__icon ti-bag"></i>
@@ -648,9 +649,65 @@
                                 <a href="" class="navbar-search">
                                     <i class="navbar-search__icon ti-search"></i>
                                 </a>
-                                <a href="" class="navbar-side-menu">
+                                <div class="navbar-side-menu js-navbar-side-menu">
                                     <i class="navbar-side-icon ti-align-right"></i>
-                                </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="heading-item__user--respon">
+                            <button class="heading-item__user-icon js-user--respon">
+                                <i class="far fa-user-circle"></i>
+                            </button>
+                        </div>
+
+                        <div class="navbar-sidebar js-navbar-sidebar">
+                            <div class="sidebar">
+                                <img src="./assets/img/sidebar-1.png" alt="" class="sidebar-img">
+                                <img src="./assets/img/sidebar-2.png" alt="" class="sidebar-img">
+                                <div class="sidebar-img-res">
+                                    <img src="./assets/img/sidebar-3.jpg" alt="" class="sidebar-img">
+                                </div>
+                                <span class="sidebar-text">
+                                    Lorem ipsum dolor sit amet, consectetuer adipis cing elit. Aenean commodo ligula
+                                    eget dolor. Aenean massa. Cum sociis theme natoque
+                                </span>
+                                <div class="sidebar-search">
+                                    <h4>Find Your Destinations</h4>
+                                    <div class="sidebar-search-form">
+                                        <input type="text" placeholder="Search...">
+                                        <button><i class="fas fa-search"></i></button>
+                                    </div>
+                                </div>
+                                <div class="sidebar-social">
+                                    <h4>Follow Me</h4>
+                                    <div class="sidebar-social-list">
+                                        <div class="sidebar-social-item">
+                                            <a href="" class="sidebar-social-link">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                        <div class="sidebar-social-item">
+                                            <a href="" class="sidebar-social-link">
+                                                <i class="fab fa-pinterest-p"></i>
+                                            </a>
+                                        </div>
+                                        <div class="sidebar-social-item">
+                                            <a href="" class="sidebar-social-link">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </div>
+                                        <div class="sidebar-social-item">
+                                            <a href="" class="sidebar-social-link">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidebar-close js-sidebar-close">
+                                <i class="fas fa-times"></i>
                             </div>
                         </div>
                     </div>
@@ -700,7 +757,7 @@
                                 <h4 class="heading-three">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                                     Aenean
                                 </h4>
-                                <h4 class="heading-three">commodo ligula eget dolor. Aenean massa. Cum sociis Theme</h4>
+                                <!-- <h4 class="heading-three">commodo ligula eget dolor. Aenean massa. Cum sociis Theme</h4> -->
                             </div>
 
                             <div class="slide-text animate__animated animate__backInUp" id="text2">
@@ -716,11 +773,11 @@
                                 <h3 class="heading-two">Quality Guaranteed.</h3>
                                 <h4 class="heading-three">Because quality does not mean expensive!
                                 </h4>
-                                <h4 class="heading-three">We select the best partners for your best experience!</h4>
+                                <!-- <h4 class="heading-three">We select the best partners for your best experience!</h4> -->
                             </div>
 
                             <div class="slide-text animate__animated animate__backInUp" id="text4">
-                                <h2 class="heading-first">Longing to come with us</h2>
+                                <h2 class="heading-first">Longing to come</h2>
                                 <h3 class="heading-two">Best Price Guaranteed</h3>
                                 <h4 class="heading-three">Look no further! We offer the best
                                 </h4>
@@ -781,7 +838,7 @@
                                 <!-- section content two -image -->
                                 <div class="content-two">
                                     <div class="content-two-inner row sm-gutter">
-                                        <div class="content-two-main col l-3">
+                                        <div class="content-two-main col l-3 m-6 c-12">
                                             <div class="content-two-item">
                                                 <div class="content-two-image content-two-item__circle">
                                                     <img src="./assets/img/content-two-1.jpg"
@@ -793,7 +850,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="content-two-main col l-3">
+                                        <div class="content-two-main col l-3 m-6 c-12">
                                             <div class="content-two-item">
                                                 <div class="content-two-image">
                                                     <img src="./assets/img/content-two-2.jpg" alt="content-two-img"
@@ -817,7 +874,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="content-two-main col l-3">
+                                        <div class="content-two-main col l-3 m-6 c-12">
                                             <div class="content-two-item">
                                                 <div class="content-two-image">
                                                     <img src="./assets/img/content-two-3.jpg" alt="content-two-img"
@@ -841,7 +898,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="content-two-main col l-3">
+                                        <div class="content-two-main col l-3 m-6 c-12">
                                             <div class="content-two-item">
                                                 <div class="content-two-image">
                                                     <img src="./assets/img/content-two-4.jpg" alt="content-two-img"
@@ -867,7 +924,7 @@
                                         </div>
                                     </div>
                                     <div class="content-two-inner row sm-gutter">
-                                        <div class="content-two-main col l-3">
+                                        <div class="content-two-main col l-3 m-6 c-12">
                                             <div class="content-two-item">
                                                 <div class="content-two-image">
                                                     <img src="./assets/img/content-two-5.jpg" alt="content-two-img"
@@ -891,7 +948,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="content-two-main col l-3">
+                                        <div class="content-two-main col l-3 m-6 c-12">
                                             <div class="content-two-item">
                                                 <div class="content-two-image">
                                                     <img src="./assets/img/content-two-6.jpg" alt="content-two-img"
@@ -915,7 +972,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="content-two-main col l-3">
+                                        <div class="content-two-main col l-3 m-6 c-12">
                                             <div class="content-two-item">
                                                 <div class="content-two-image">
                                                     <img src="./assets/img/content-two-7.jpg" alt="content-two-img"
@@ -939,7 +996,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="content-two-main col l-3">
+                                        <div class="content-two-main col l-3 m-6 c-12">
                                             <div class="content-two-item">
                                                 <div class="content-two-image content-two-item__circle">
                                                     <img src="./assets/img/content-two-8.jpg" alt="content-two-img"
@@ -954,7 +1011,7 @@
                                         </div>
                                     </div>
                                     <div class="content-two-inner row sm-gutter">
-                                        <div class="content-two-main col l-3">
+                                        <div class="content-two-main col l-3 m-6 c-12">
                                             <div class="content-two-item">
                                                 <div class="content-two-image  content-two-item__circle">
                                                     <img src="./assets/img/content-two-9.jpg" alt="content-two-img"
@@ -967,7 +1024,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="content-two-main col l-3">
+                                        <div class="content-two-main col l-3 m-6 c-12">
                                             <div class="content-two-item">
                                                 <div class="content-two-image">
                                                     <img src="./assets/img/content-two-10.jpg" alt="content-two-img"
@@ -991,7 +1048,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="content-two-main col l-3">
+                                        <div class="content-two-main col l-3 m-6 c-12">
                                             <div class="content-two-item">
                                                 <div class="content-two-image">
                                                     <img src="./assets/img/content-two-11.jpg" alt="content-two-img"
@@ -1015,7 +1072,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="content-two-main col l-3">
+                                        <div class="content-two-main col l-3 m-6 c-12">
                                             <div class="content-two-item">
                                                 <div class="content-two-image">
                                                     <img src="./assets/img/content-two-12.jpg" alt="content-two-img"
@@ -1458,7 +1515,7 @@
                                     </div>
 
                                     <div class="unforgettable-sale row">
-                                        <div class="snow-main col l-4">
+                                        <div class="snow-main col l-4 m-6 c-12">
                                             <div class="snow-item">
                                                 <div class="snow-image">
                                                     <img src="./assets/img/sale-off-1.jpg" alt="snow-img"
@@ -1477,7 +1534,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="snow-main col l-4">
+                                        <div class="snow-main col l-4 m-6 c-12">
                                             <div class="snow-item">
                                                 <div class="snow-image">
                                                     <img src="./assets/img/sale-off-2.jpg" alt="snow-img"
@@ -1496,7 +1553,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="snow-main col l-4">
+                                        <div class="snow-main col l-4 m-6 c-12">
                                             <div class="snow-item">
                                                 <div class="snow-image">
                                                     <img src="./assets/img/sale-off-3.jpg" alt="snow-img"
@@ -1733,7 +1790,7 @@
                                             </p>
                                         </div>
                                         <div class="destination-body row">
-                                            <div class="content-two-main destination-item col l-4">
+                                            <div class="content-two-main destination-item col l-4 m-6 c-12">
                                                 <div class="content-two-item">
                                                     <div class="content-two-image content-two-item__circle">
                                                         <img src="./assets/img/destination-1.jpg"
@@ -1748,7 +1805,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="content-two-main destination-item col l-4">
+                                            <div class="content-two-main destination-item col l-4 m-6 c-12">
                                                 <div class="content-two-item">
                                                     <div class="content-two-image content-two-item__circle">
                                                         <img src="./assets/img/destination-2.jpg"
@@ -1760,7 +1817,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="content-two-main destination-item col l-4">
+                                            <div class="content-two-main destination-item col l-4 m-6 c-12">
                                                 <div class="content-two-item">
                                                     <div class="content-two-image content-two-item__circle">
                                                         <img src="./assets/img/destination-3.jpg"
@@ -1779,7 +1836,7 @@
 
                             <!-- Section Subscribe -->
                             <div class="subscribe">
-                                <div class="subcribe-inner grid wide row">
+                                <div class="subscribe-inner grid wide row">
                                     <h4 class="subscribe-left">Subcribe Now and Quench Your Wanderlust</h4>
                                     <div class="subscribe-right">
                                         <button class="btn subscribe-button">
@@ -1983,9 +2040,11 @@
         </div>
     </div>
 
-    <!-- JS user modal -->
+    <!-- JS user modal + JS user Respon -->
     <script>
         const userLogin = document.querySelector('.js-user')
+        const userLoginRespon = document.querySelector('.js-user--respon')
+
 
         const modal = document.querySelector('.js-modal')
         const modalOverlay = document.querySelector('.js-modal__overlay')
@@ -1999,7 +2058,40 @@
         }
 
         userLogin.addEventListener('click', showModal)
+
+        userLoginRespon.addEventListener('click', showModal)
+
         modalOverlay.addEventListener('click', hideModal)
+
+    </script>
+
+    <!-- JS navbar sidebar -->
+    <script>
+        const navbarSideMenu = document.querySelector('.js-navbar-side-menu')
+
+        const navbarSidebar = document.querySelector('.js-navbar-sidebar')
+        const sidebarClose = document.querySelector('.js-sidebar-close')
+
+        function showSidebar() {
+            navbarSidebar.classList.add('open')
+        }
+
+        function hideSidebar() {
+            navbarSidebar.classList.remove('open')
+        }
+
+        // Khi click vao nut navbarSideMenu sẽ mở Sidebar
+        navbarSideMenu.addEventListener('click', showSidebar)
+
+        // Khi click vao nut X sẽ đóng Sidebar
+        sidebarClose.addEventListener('click', hideSidebar)
+
+        // Đóng sidebar khi click ra ngoài.
+        window.addEventListener("click", function (e) {
+            if (!e.target.closest('.js-navbar-sidebar') && (!e.target.closest('.js-navbar-side-menu'))) {
+                navbarSidebar.classList.remove('open')
+            }
+        });
 
     </script>
 
@@ -2055,7 +2147,24 @@
             slidesToScroll: 3,
             autoplaySpeed: 3500,
             prevArrow: false,
-            nextArrow: false
+            nextArrow: false,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                    }
+                },
+                {
+                    breakpoint: 740,
+                    settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: false,
+                    }
+                },
+            ]
         });
     </script>
 
@@ -2079,7 +2188,24 @@
             slidesToScroll: 2,
             autoplaySpeed: 5000,
             prevArrow: false,
-            nextArrow: false
+            nextArrow: false,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                    }
+                },
+                {
+                    breakpoint: 740,
+                    settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: false,
+                    }
+                },
+            ]
         });
     </script>
 

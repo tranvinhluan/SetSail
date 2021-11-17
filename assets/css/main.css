@@ -68,7 +68,8 @@
     color: var(--primary-color);
 }
 
-.heading-item__user {
+.heading-item__user,
+.heading-item__user--respon {
     width: 46px;
     background-color: var(--second-color);
     height: 100%;
@@ -76,6 +77,10 @@
     align-items: center;
     justify-content: center;
     font-size: 2.4rem;
+}
+
+.heading-item__user--respon {
+    display: none;
 }
 
 .heading-item__user-icon {
@@ -295,6 +300,7 @@
     height: calc(var(--header-height) - var(--heading-height));
     background-color: white;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.2s linear;
 }
 
 .navbar-container {
@@ -365,6 +371,10 @@
     font-size: 1.5rem;
 }
 
+.nav-menu-all {
+    position: relative;
+}
+
 .nav-menu-item:hover {
     color: var(--second-color);
 }
@@ -394,18 +404,18 @@
     width: 257px;
     line-height: 40px;
     border-top: 1px solid transparent;
-    /* vì padding 32px ở thẻ a: drop-home__link */
     left: -32px; 
-    display: inline-block;
+    display: none;
     padding: 28px 0 30px;
     opacity: 0;
-    visibility: hidden;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    animation: identifier 0.4s ease-in;
+    transform-origin: top center;
 }
 
 .nav-menu-item:hover .drop-home {
     opacity: 1;
-    visibility: visible;
+    display: block;
 }
 
 .drop-home__list {
@@ -439,8 +449,7 @@
     position: absolute;
     left: 100%;
     top: -30px;
-    background: red;
-    box-shadow: 0 3px 13px 0 rgb(0 0 0 / 3%);
+    box-shadow: 0 3px 10px 0 rgb(0 0 0 / 10%);
     z-index: 6;
     list-style: none;
     text-align: left;
@@ -449,6 +458,16 @@
     box-sizing: border-box;
     background-color: #fff;
     display: none;
+}
+
+
+@keyframes identifier {
+    0%{
+        transform:scaleY(0);
+    }
+    100%{
+        transform: scaleY(1);
+    }
 }
 
 .drop-blog__list {
@@ -462,8 +481,9 @@
     position: fixed;
     left: 0;
     right: 0;
-    top: var(--header-height);
     display: none;
+    animation: identifier 0.4s ease-in;
+    transform-origin: top center;
 }
 
 .nav-menu-item:hover .item-all{
@@ -475,10 +495,10 @@
     background-color: #fff;
     border-top: 1px solid transparent;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
 }
 
 .item-all-drop {
-    /* min-width: 1100px; */
     width: 1300px;
     padding: 46px 0 44px;
     display: inline-block;
@@ -672,9 +692,129 @@
     text-decoration: none;
 }
 
+.navbar-side-menu:hover {
+    cursor: pointer;
+}
+
 .navbar-search__icon:hover,
 .navbar-side-icon:hover {
     color: var(--second-color);
+}
+
+/* Navbar sidebar */
+.navbar-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 460px;
+    background-color: white;
+    z-index: 2;
+    box-shadow: 0 3px 13px 0 rgb(0 0 0 / 7%);
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+}
+
+.navbar-sidebar.open {
+    transform: translateX(0);
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 84px 32px 32px 32px;
+}
+
+.sidebar-img {
+    margin-bottom: 32px;
+}
+
+.sidebar-text {
+    font-size: 15px;
+}
+
+.sidebar-search {
+    margin: 32px 0;
+}
+
+.sidebar-search h4,
+.sidebar-social {
+    font-size: 18px;
+    color: black;
+    text-align: center;
+}
+
+.sidebar-search-form {
+    position: relative;
+    margin-top: 25px;
+}
+
+.sidebar-search-form input {
+    width: 260px;
+    font-size: 1.4rem;
+    padding: 16px;
+    background-color: #F8F8F8;
+    border: none;
+    outline: none;
+}
+
+.sidebar-search-form button {
+    width: 54px;
+    height: 100%;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--second-color);
+    color: white;
+    border: none;
+} 
+
+.sidebar-search-form button:hover {
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.sidebar-social-list {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+}
+
+.sidebar-social-item {
+    background-color: var(--second-color);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 8px;
+    border-radius: 50px;
+}
+
+.sidebar-social-link {
+    color: white;
+}
+
+.sidebar-social-item:hover {
+    background-color: var(--primary-color);
+}
+
+.sidebar-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2.6rem;
+    padding: 20px;
+    color: #212121;
+    cursor: pointer;
+}
+
+.sidebar-close:hover {
+    color: var(--primary-color);
 }
 
 /* Slider */
@@ -776,7 +916,6 @@ input[name="img"] {
     padding-bottom: 5px;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px #000;
-
     user-select: none;
     -webkit-user-select: none;
 }
@@ -816,7 +955,6 @@ input[name="img"] {
     width: 100%;
     border: 1px solid transparent;
     margin-top: -39px !important;
-    /* z-index: 20; */
     position: relative;
 }
 
@@ -834,6 +972,12 @@ input[name="img"] {
     border: none;
     max-height: 78px;
     width: 28%;
+}
+
+
+select {
+    -webkit-appearance:none;
+    appearance: none;
 }
 
 .form-control,
@@ -933,7 +1077,7 @@ option:checked {
 }
 
 .content-two-item {
-    padding: 0 5px;
+    padding: 5px 5px;
     position: relative;
     cursor: pointer;
 }
@@ -1067,12 +1211,8 @@ option:checked {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 80%;
     background-attachment: fixed;
-}
-
-.content-four-text, .four-text-inner {
-    height: 100%;
+    overflow: hidden;
 }
 
 .four-text-item {
@@ -1135,7 +1275,6 @@ option:checked {
     height: auto;
     display: block;
     max-width: 1000px;
-    /* aspect-ratio: 1000 / 480; */
 }
 
 
@@ -1446,6 +1585,7 @@ option:checked {
     text-align: center;
     padding-bottom: 100px;
     background-size: cover;
+    background-position: center;
     background-image: url(https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/h1-background-img-1.jpg);
 }
 
@@ -1838,7 +1978,6 @@ option:checked {
     list-style: none;
     font-size: 14px;
 }
-
 
 .footer-post-list {
     margin-top: 22px;

@@ -1,0 +1,393 @@
+/* Mobile & tablet */
+@media (max-width: 1023px) {
+    .main {
+        overflow-x: hidden;
+    }
+
+    .header__heading {
+        display: none;
+    }
+
+    .navbar-center {
+        display: none;
+    }
+
+    .navbar-cart-holder,
+    .navbar-search {
+        display: none;
+    }
+
+    :root {
+        --header-height: 70px;
+        --heading-height: 0px;
+    }
+
+    .header {
+        height: calc(var(--header-height) + var(--heading-height));
+    }
+
+    .header__navbar {
+        background-color: #3FD0D4;
+        color: white;
+    }
+
+    .heading-item__user {
+        display: block !important;
+    }
+
+    .heading-item__user--respon {
+        display: block;
+    }
+
+    .navbar-container {
+        justify-content: space-between;
+    }
+
+    .navbar-side-icon {
+        color: white;
+    }
+
+    .navbar-side-icon:hover {
+        color: red;
+    }
+
+    .btn-right-related,
+    .btn-right-buy,
+    .btn-bottom-help {
+        display: none;
+    }
+
+    .search-option-item .search-option-select,
+    .search-option-item .form-control {
+        padding: 16px 10px 16px 18px;
+    }
+
+    .review-item {
+        padding: 10px;
+    }
+
+    .review-text {
+        padding: 5px 5px 5px 15px;
+    }
+    
+    .destination-item {
+        margin-bottom: 15px;
+    }
+
+    .footer-top-inner {
+        padding: 106px 50px 78px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .navigation {
+        bottom: 15%;
+    }
+
+    .btn-theme {
+        padding: 16px 20px 16px 20px;
+    }
+
+    .heading-two {
+        font-size: 70px;
+    }
+
+    .four-text-item {
+        padding: 100px 20px 240px;
+    }
+
+    .four-text-two {   
+        font-size: 54px;
+        line-height: 1;
+    }
+
+    .content-video-main {
+        margin-top: -240px !important;
+    }
+
+    .content-video-img {
+        width: 100%;
+    }
+
+    .unforgettable-head {
+        padding: 180px 70px 60px;
+    }
+
+    .travel-text__bottom {
+        padding: 0 5% 5%;
+        font-size: 20px;
+    }
+   
+    .amazing-tour-image {
+        margin-top: 10px;
+    }
+
+    .destination {
+        padding-bottom: 110px !important;
+        margin-top: 50px;
+    }
+    
+    .unforgettable-bottom {
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .destination-heading {
+        margin: 0;
+        text-shadow: 0 0 1px rgb(173, 168, 168);
+    }
+
+    .footer-top-subscribe,
+    .footer-top-instagram {
+        margin-top: 65px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .navbar-left__link,
+    .navbar-left__logo {
+        height: 36px;
+    }
+
+    .navbar-sidebar {
+        width: 100%;
+    }
+
+    .sidebar{
+        padding: 0;
+    }
+
+    .sidebar-img {
+        margin-bottom: 10px;
+    }
+
+    .sidebar-img-res {
+        width: 100%;
+    }
+
+    .sidebar-text {
+        font-size: 14px;
+        color: #212121;
+        padding: 0 10px;
+    }
+
+    .sidebar-search  {
+        margin: 0;
+    }
+
+    .sidebar-search-form {
+        margin-top: 10px;
+    }
+
+    .sidebar-social-list {
+        margin-top: 0;
+    }
+
+    .heading-first {
+        font-size: 46px;
+        line-height: 1;
+    }
+
+    .heading-two {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .heading-three {
+        font-size: 18px;
+        line-height: 1;
+        margin-top: 20px;
+    }
+
+    .navigation {
+        bottom: 35%;
+    }
+
+    .slide-text {
+        top: 30%;
+    }
+
+    .search-container {
+        padding: 25px;
+        box-shadow: 0 3px 13px 0 rgb(0 0 0 / 10%);
+    }
+
+    .search-option {
+        display: block;
+    }
+
+    .search-option-item,
+    .search-option-btn {
+        width: 100%;
+        border: 1px solid rgba(206, 206, 206, 0.6);
+    }
+
+    .form-control, .search-option-select, option {
+        color: black;
+    }
+
+    .slide img {
+        height: 80%;
+    }
+   
+    .search {
+        margin-top: -250px !important;
+    }
+
+    .content-first {
+        margin-top: 50px;
+    }
+
+    .content-first-center {
+        font-size: 50px;
+    }
+
+    .content-three {
+        padding-bottom: 70px;
+    }
+
+    .content-three-img {
+        width: 80%;
+    }
+
+    .four-text-item {
+        padding: 60px 20px 140px;
+    }
+
+    .four-text-two {   
+        font-size: 40px;
+        line-height: 1;
+        margin: 20px 0;
+    }
+
+    .four-text-three {
+        font-size: 16px;
+    }
+    
+    .content-video-main {
+        margin-top: -120px !important;
+    }
+
+    .content-image-inner {
+        padding: 0 20px;
+    }
+
+    .content-video-img {
+        width: 100%;
+    }
+
+    .plan-center {
+        font-size: 40px;
+    }
+
+    .plan-bottom {
+        padding: 0 20px;
+    }
+    
+    .name-center {
+        padding: 0 8%;
+        margin: 50px 0 0;
+    }
+
+    .desc-center {
+        margin: 0;
+    }
+
+    .desc-bottom {
+        margin: 0 0 15px;
+    }
+
+    .unforgettable-head {
+        padding: 200px 20px 70px;
+    }
+    
+    .unforgettable-center {
+        font-size: 40px;
+    }
+
+    .unforgettable-bottom {
+        font-size: 17px;
+        padding: 0;
+    }
+
+    .travel-text__center {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    .travel-text__bottom {
+        padding: 0;
+    }
+
+    .blog-main {
+        padding: 106px 0 60px !important;
+    }
+
+    .blog-container {
+        padding: 0 20px;
+    }
+
+    .amazing-tour {
+        display: block;
+        padding: 20px;
+    }
+
+    .amazing-tour-content {
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .blog-sale {
+        padding: 30px
+    }
+
+    .blog-sale-text {
+        width: calc(85% + 10px);
+        left: 22px;
+    }
+
+    .destination {
+        background-image: none;
+        background-color: #f8f8f8;
+        padding-top: 0 !important;
+    }
+
+    .destination-heading {
+        padding: 60px 0 !important;
+    }
+
+    .subscribe {
+        height: 200px;
+    }
+
+    .subscribe-inner {
+        display: block;
+        padding: 0 40px;
+    }
+
+    .subscribe-left {
+        width: 100%;
+        line-height: 1.2;
+    }
+
+    .subscribe-right {
+        width: 100%;
+        text-align: left;
+        margin-top: 25px;
+    }
+
+    .subscribe-button {
+        height: 50px;
+        width: 200px;
+    }
+
+    .footer-top-post,
+    .footer-top-subscribe,
+    .footer-top-instagram {
+        margin-top: 60px;
+    }
+
+}
+
