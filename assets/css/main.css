@@ -223,6 +223,10 @@
     color: #000;
 }
 
+.auth-form__controls--register {
+    margin-top: 20px;
+}
+
 .btn {
     width: 100%;
     height: 52px;
@@ -1829,7 +1833,7 @@ option:checked {
 }
 
 .sale-text-inner {
-    transform: rotate(-15deg);
+    transform: rotate(-18deg);
 }
 
 .sale-text-heading {

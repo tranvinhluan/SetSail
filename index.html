@@ -2045,7 +2045,6 @@
         const userLogin = document.querySelector('.js-user')
         const userLoginRespon = document.querySelector('.js-user--respon')
 
-
         const modal = document.querySelector('.js-modal')
         const modalOverlay = document.querySelector('.js-modal__overlay')
 
@@ -2058,9 +2057,7 @@
         }
 
         userLogin.addEventListener('click', showModal)
-
         userLoginRespon.addEventListener('click', showModal)
-
         modalOverlay.addEventListener('click', hideModal)
 
     </script>
@@ -2105,35 +2102,26 @@
                 nextSlide();
             }, 6000);
 
-            function nextSlide(idImageCurrent) {
-                console.log(idImageCurrent);
-                var idImage = idImageCurrent ? idImageCurrent : parseInt(document.querySelector('input[name="img"]:checked').getAttribute("id").replace("img", "")) + 1;
-
-                // next img
-                if (idImage > 4) {
-                    idImage = 1;
-                }
-                document.getElementById('img' + idImage).checked = true;
-
-                // next text
-                var slideTexts = document.getElementsByClassName('slide-text');
-                for (let index = 0; index < slideTexts.length; index++) {
-                    var element = slideTexts[index];
-                    element.style.display = "none";
-                }
-                document.getElementById('text' + idImage).style.display = "block";
-
-                // zoom img
-                // var imgs = document.querySelectorAll('.slide img');
-                // for (let i = 0; i < imgs.length; i++) {
-                //     var e = imgs[i];
-                //     e.style.transition = null;
-                //     e.style.transform = null;
-                // }
-                // document.getElementsByTagName('img')[idImage].style.transition = "transform 6s";
-                // document.getElementsByTagName('img')[idImage].style.transform = "scale(1.1)";
-            }
         }
+
+        function nextSlide(idImageCurrent) {
+            var idImage = idImageCurrent ? idImageCurrent : parseInt(document.querySelector('input[name="img"]:checked').getAttribute("id").replace("img", "")) + 1;
+
+            // next img
+            if (idImage > 4) {
+                idImage = 1;
+            }
+            document.getElementById('img' + idImage).checked = true;
+
+            // next text
+            var slideTexts = document.getElementsByClassName('slide-text');
+            for (let index = 0; index < slideTexts.length; index++) {
+                var element = slideTexts[index];
+                element.style.display = "none";
+            }
+            document.getElementById('text' + idImage).style.display = "block";
+        }
+
     </script>
 
     <!-- JS Slick Slide -->
@@ -2159,9 +2147,9 @@
                 {
                     breakpoint: 740,
                     settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    dots: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: false,
                     }
                 },
             ]
@@ -2200,9 +2188,9 @@
                 {
                     breakpoint: 740,
                     settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    dots: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: false,
                     }
                 },
             ]
